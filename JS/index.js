@@ -19,9 +19,60 @@ console.log(sumaEdades)
 console.log(restaEdades)
 console.log(productoEdades)
 console.log(divisionEdades) */
-/* 11.    Crear un objeto llamado alumno con un mínimo de 5 propiedades, mostrar dicho objeto utilizando console.table() y también mostrar cada una de las propiedades del objeto por separado.
-12.    Crear un objeto llamado mascota con un mínimo de 5 propiedades, mostrar dicho objeto utilizando console.table() y también mostrar cada una de las propiedades del objeto por separado.
-13.    Crear un array llamado frutas con un mínimo de 5 elementos y mostrar por consola el array completo y cada uno de los elementos por separado.
-14.    Crear un array llamado números con un mínimo de 5 elementos y mostrar por consola el array completo y cada uno de los elementos por separado.
-15.    Crear un array llamado familia con un mínimo de 5 objetos y mostrar por consola el array completo y cada uno de los elementos por separado.
-16.    Crear una variable llamada textoAleatorio formando una frase con el segundo elemento del array del punto 13, el cuarto elemento del punto 14 y el quinto objeto del array del punto 15. */
+const alumno = {
+    nombre: "Pablo",
+    apellido: "Marmol",
+    edad: 23,
+    nacionalidad: "Argentina",
+    estudios: "secundario"
+}
+console.table(alumno)
+console.table(alumno.nombre)
+console.table(alumno.apellido)
+console.table(alumno.edad)
+console.table(alumno.nacionalidad)
+console.table(alumno.estudios)
+const frutas = ['Manzana', 'Pera', 'Naranja', 'Pomelo', 'Sandía']
+console.table(frutas)
+console.table(frutas[0])
+console.table(frutas[1])
+console.table(frutas[2])
+console.table(frutas[3])
+console.table(frutas[4])
+const numeros = [23, 34, 56, 7, 10]
+console.table(numeros)
+console.table(numeros[0])
+console.table(numeros[1])
+console.table(numeros[2])
+console.table(numeros[3])
+console.table(numeros[4])
+const familia = [
+    {
+        rol: "Padre",
+        nombre: "Juan"
+    },
+    {
+        rol: "Madre",
+        nombre: "Ana"
+    },
+    {
+        rol: "Hija",
+        nombre: "Josefina"
+    },
+    {
+        rol: "Hijo",
+        nombre: "Bruno"
+    },
+    {
+        rol: "Hijo",
+        nombre: "Nahuel"
+    }
+]
+console.table(familia)
+console.table(familia[0])
+console.table(familia[1])
+console.table(familia[2])
+console.table(familia[3])
+console.table(familia[4])
+const textoAleatorio = `Me gusta la ${frutas[1]}, comería ${numeros[3]}, mi ${familia[4].rol} ${familia[4].nombre} está cansado de que se la ofrezca`
+console.log(textoAleatorio)
